@@ -18,7 +18,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
 
   useEffect(() => {
     handlePrice();
-  }, [cart]);
+  }, [cart]); 
 
   return (
     <article className="bg-white text-black p-4">
