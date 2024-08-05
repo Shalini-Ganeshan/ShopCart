@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar = ({ size, setShow }) => {
   return (
-    <nav className="bg-orange-500 text-white p-4 shadow-2xl">
+    <nav className="bg-orange-400 text-white p-4 shadow-2xl">
       <div className="flex flex-col md:flex-row md:justify-between items-center text-3xl">
         <span 
           className="cursor-pointer hover:text-gray-300 mb-2 md:mb-0 " 
