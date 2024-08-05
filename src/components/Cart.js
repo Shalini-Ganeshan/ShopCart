@@ -1,15 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 
 const Cart = ({ cart, setCart, handleChange }) => {
   const [price, setPrice] = useState(0);
 
-  const handlePrice = () => {
+  // Memoize handlePrice to avoid unnecessary re-renders
+  const handlePrice = useCallback(() => {
     let total = 0;
     cart.forEach((item) => {
       total += item.amount * item.price;
     });
     setPrice(total);
-  };
+  }, [cart]);
 
   const handleRemove = (id) => {
     const updatedCart = cart.filter((item) => item.id !== id);
@@ -18,7 +19,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
 
   useEffect(() => {
     handlePrice();
-  }, [cart]); 
+  }, [handlePrice]); // Use handlePrice in dependency array
 
   return (
     <article className="bg-white text-black p-4">
