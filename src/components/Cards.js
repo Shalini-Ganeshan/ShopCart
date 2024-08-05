@@ -15,7 +15,7 @@ const Cards = ({ item, handleClick }) => {
   </div>
   <div className=" mx-auto">
     <button 
-      className="bg-orange-400 text-white px-4 py-2 shadow-2xl rounded  text-lg font-semibold transition-transform duration-300 transform hover:scale-110 hover:bg-gray-200"
+      className="bg-orange-400 text-white px-4 py-2 shadow-2xl rounded  text-lg font-semibold transition-transform duration-300 transform hover:scale-110 hover:bg-orange-500"
       onClick={() => handleClick(item)}
     >
       Add to Cart
