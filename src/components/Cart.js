@@ -3,7 +3,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 const Cart = ({ cart, setCart, handleChange }) => {
   const [price, setPrice] = useState(0);
 
-  // Memoize handlePrice to avoid unnecessary re-renders
+ 
   const handlePrice = useCallback(() => {
     let total = 0;
     cart.forEach((item) => {
@@ -19,7 +19,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
 
   useEffect(() => {
     handlePrice();
-  }, [handlePrice]); // Use handlePrice in dependency array
+  }, [handlePrice]); 
 
   return (
     <article className="bg-white text-black p-4">
