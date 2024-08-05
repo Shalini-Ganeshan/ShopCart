@@ -6,7 +6,7 @@ const Cards = ({ item, handleClick }) => {
   return (
 <div className="border-2 border-purple-300  text-white rounded-lg overflow-hidden shadow-lg m-4 p-4 flex flex-col h-full transition-transform duration-300 transform hover:scale-105">
   <div className="w-full h-64 bg-gray-700 flex items-center justify-center mb-2">
-    <img src={img} alt="Image" className="h-full w-full " />
+    <img src={img} alt={title} className="h-full w-full " />
   </div>
   <div className="flex-1 text-center">
     <p className="text-xl font-semibold mb-2">{title}</p>
