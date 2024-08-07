@@ -10,7 +10,7 @@ const Cards = ({ item, handleClick }) => {
   </div>
   <div className="flex-1 text-center">
     <p className="text-xl font-semibold mb-2">{title}</p>
-    <p className="text-gray-300 mb-2">{author}</p>
+    <p className="text-gray-800 mb-2">{author}</p>
     <p className="text-lg  text-blue-900 ">Price -  ₹ {price} </p>
   </div>
   <div className=" mx-auto">
