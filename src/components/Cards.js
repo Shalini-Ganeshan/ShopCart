@@ -4,7 +4,7 @@ const Cards = ({ item, handleClick }) => {
   const { title, author, price, img } = item;
 
   return (
-<div className="border-2 border-purple-300  text-white rounded-lg overflow-hidden shadow-lg m-4 p-4 flex flex-col h-full ">
+<div className="border-2 border-purple-300  text-black rounded-lg overflow-hidden shadow-lg m-4 p-4 flex flex-col h-full ">
   <div className="w-full h-64 bg-gray-700 flex items-center justify-center mb-2">
     <img src={img} alt={title} className="h-full w-full " />
   </div>
