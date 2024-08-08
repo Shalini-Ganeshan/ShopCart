@@ -24,7 +24,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
   return (
     <article className="bg-white text-black p-4">
       {cart?.map((item) => (
-        <div className="flex flex-col md:flex-row items-center mb-4 p-4 border-2 border-purple-800 rounded-md" key={item.id}>
+        <div className="flex flex-col md:flex-row items-center mb-4 p-4 border-2 border-purple-300 rounded-md" key={item.id}>
           <div className="flex flex-row items-center flex-shrink-0 font-semibold text-lg">
             <img src={item.img} alt={item.title} className="w-20 h-20 object-cover rounded-md" />
             <p className="ml-4 text-center md:text-left">{item.title}</p>
